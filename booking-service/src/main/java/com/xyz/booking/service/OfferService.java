@@ -7,14 +7,6 @@ import java.time.LocalTime;
 @Service
 public class OfferService {
 
-    /**
-     * Apply all applicable offers and return final payable amount
-     *
-     * @param seatCount number of tickets
-     * @param pricePerSeat base ticket price
-     * @param showTime show start time
-     * @return final amount after discounts
-     */
     public double applyOffers(int seatCount, double pricePerSeat, LocalTime showTime) {
 
         double totalAmount = seatCount * pricePerSeat;
